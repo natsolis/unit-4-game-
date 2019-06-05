@@ -10,7 +10,6 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script type="text/javascript" src="games.js"></script>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
@@ -20,9 +19,13 @@
   style="background: url(https://images.unsplash.com/photo-1515387784663-e2e29a23f69e?ixlib=rb-1.2.1&auto=format&fit=crop&w=2434&q=80) ">
   <!-- Put the header here like a jumbotron that says Crystals Collector , also put border on jumbotron -->
   <div class="container">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Welcome to Crystals Collector</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Welcome to Crystals Collector</h1>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -54,25 +57,26 @@
   <div class="clearfix">
     <div class="box2" style="background-color: cadetblue">
       <p id="number">
-        45
+         <!-- Wins: 
+        Losses: -->
       </p>
     </div>
 
-  </div>
+  </div> 
 
   <!-- The crystals then need to be placed on the page -->
   <div class="row">
     <div class="col-md-12">
-  <img src="https://i.pinimg.com/originals/90/e7/79/90e779c6606ab16814bb108c994babae.jpg" alt="drawing of crystal"
-    width="100" height="100">
-  <img src="https://i.pinimg.com/564x/58/60/fd/5860fd61992a9966de7ef174dfac8af6.jpg" alt="drawing of purple crystal"
-    width="100" height="100">
-  <img src="https://i.pinimg.com/564x/d3/7e/3f/d37e3f809a2839d6d1cce0006232c4ea.jpg" alt="drawing crystal" width="100"
-    height="100">
-  <img src="https://i.pinimg.com/564x/5e/f9/d1/5ef9d11ecc78f3ab07ac8aecf75793a4.jpg" alt="drawing crystal" width="100"
-    height="100">
+      <img id="firstcrystal" src="https://i.pinimg.com/originals/90/e7/79/90e779c6606ab16814bb108c994babae.jpg"
+        alt="drawing of crystal" width="100" height="100">
+       <img id="secondcrystal" src="https://i.pinimg.com/564x/58/60/fd/5860fd61992a9966de7ef174dfac8af6.jpg"
+        alt="drawing of purple crystal" width="100" height="100">
+      <img id="thirdcrystal" src="https://i.pinimg.com/564x/d3/7e/3f/d37e3f809a2839d6d1cce0006232c4ea.jpg"
+        alt="drawing crystal" width="100" height="100">
+      <img id="fourthcrystal" src="https://i.pinimg.com/564x/5e/f9/d1/5ef9d11ecc78f3ab07ac8aecf75793a4.jpg"
+        alt="drawing crystal" width="100" height="100">
+    </div>
   </div>
-</div>
   <!-- And the box where it tells the user the number they are getting so far becasue they are pressing the crystals -->
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -85,6 +89,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script type="text/javascript" src="games.js"></script>
 </body>
 
 </html>
